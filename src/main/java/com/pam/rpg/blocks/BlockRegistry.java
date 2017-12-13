@@ -39,7 +39,7 @@ public final class BlockRegistry {
     public static void registerBlock(String registerName, ItemBlock itemBlock, Block block) {
         block.setRegistryName(registerName);
         block.setUnlocalizedName(registerName);
-        block.setCreativeTab(bonecraft.tabBonecraft);
+        block.setCreativeTab(rpg.tabRpg);
         blocks.add(block);
 
         itemBlock.setRegistryName(registerName);
