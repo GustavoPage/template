@@ -40,6 +40,7 @@ public class Rpg {
 	public void preInit(FMLPreInitializationEvent event) {
 		config = new ConfigHandler(new Configuration(event.getSuggestedConfigurationFile()));
 		proxy.preInit(event);
+		fossilrarity = cfg.get(Configuration.CATEGORY_GENERAL,"fossilrarity", 5).getInt();
 		//NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 	}
 
